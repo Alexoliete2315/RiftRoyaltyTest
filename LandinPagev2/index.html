@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la App</title>
+    <!-- Enlace a tu hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <!-- Logo de la App -->
+    <img src="logo_app.png" alt="Logo de la App">
+    <!-- Título de la App -->
+    <h1>Nombre de la App</h1>
+</header>
+
+<main>
+    <!-- Primer div con carrusel de imágenes -->
+    <div class="seccion">
+        <div id="carrusel">
+            <!-- Aquí van las imágenes del carrusel -->
+            <img src="img/fondo-download.jpg" alt="Imagen 1">
+            <img src="img/fondo-download.jpg"alt="Imagen 2">
+            <img src="img/fondo-download.jpg" alt="Imagen 3">
+        </div>
+        <p>Texto descriptivo sobre la App.</p>
+    </div>
+
+    <!-- Segundo div con frase motivadora y botón de descarga -->
+    <div class="seccion">
+        <p>Frase motivadora relacionada con la App.</p>
+        <a href="enlace_de_descarga" class="boton-descarga">Descargar</a>
+    </div>
+
+    <!-- Tercer div con apartado de redes sociales y contacto -->
+    <div class="seccion">
+        <h2>Síguenos en redes sociales</h2>
+        <!-- Aquí van los iconos/link a tus redes sociales -->
+        <ul class="redes-sociales">
+            <li><a href="enlace_facebook"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="enlace_twitter"><img src="twitter.png" alt="Twitter"></a></li>
+            <li><a href="enlace_instagram"><img src="instagram.png" alt="Instagram"></a></li>
+        </ul>
+        <p>Contacto: correo@example.com</p>
+    </div>
+</main>
+
+<footer>
+    <!-- Pie de página con información adicional, enlaces legales, etc. -->
+    <p>Derechos de autor © 2024 Nombre de la App. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Scripts JavaScript para el funcionamiento del carrusel -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var index = 0;
+        var images = $("#carrusel img");
+        var totalImages = images.length;
+
+        function showImage(i){
+            images.hide();
+            images.eq(i).show();
+        }
+
+        $("#carrusel img:gt(0)").hide(); // Oculta todas las imágenes excepto la primera al cargar la página
+
+        // Función para mostrar la siguiente imagen en el carrusel
+        function nextImage(){
+            index = (index + 1) % totalImages;
+            showImage(index);
+        }
+
+        // Función para mostrar la imagen anterior en el carrusel
+        function prevImage(){
+            index = (index - 1 + totalImages) % totalImages;
+            showImage(index);
+        }
+
+        // Intervalo para cambiar automáticamente las imágenes cada 5 segundos
+        setInterval(nextImage, 5000);
+    });
+</script>
+
+</body>
+</html>
