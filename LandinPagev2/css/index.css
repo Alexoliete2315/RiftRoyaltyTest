@@ -1,57 +1,184 @@
 /* Estilos generales */
 
 body {
+    background-color: rgb(255, 172, 172);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+body p{
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 header {
     background-color: #333; /* Color de fondo del header */
     color: #fff; /* Color del texto en el header */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center;
 }
 
+header img {
+    width: 144px; /* Establece el ancho del logo */
+    height: 144px; /* Establece la altura del logo */
+    margin-right: 10px; /* Añade un margen a la derecha para separar el logo del texto */
+}
+header h1{
+    font-size: 72px;
+    margin: 0px;
+    font-family: 'Merriweather', sans-serif;
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat al texto del navbar */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px; /* Ajusta el tamaño del texto del enlace */
+}
+
+nav a:hover {
+    color: #A7C5E1;
+}
+
+
 main {
+    display: flex;
     padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .seccion {
     margin-bottom: 30px;
 }
-
-/* Estilos específicos para el carrusel */
-
-#carrusel {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
+.seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
 }
 
-#carrusel img {
-    display: block;
+.contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-around; /* Centra horizontalmente los elementos */
+    width: 100%; /* Ocupa el 100% del ancho */
+    margin-bottom: 15px;
+}
+.contenido p {
+    width: 50%; /* Ocupa el 50% del ancho */
+    max-width: 50%; /* Ajusta el ancho máximo del párrafo según sea necesario */
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    text-align: justify;
+    background-color: rgb(145, 145, 145, 0.5);
+    border-radius: 10px; /* Redondea los bordes del fondo */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido img {
+    width: 50%; /* Ocupa el 50% del ancho */
+    max-width: 50%; /* Ajusta el ancho máximo de la imagen según sea necesario */
+}
+
+
+.contenido img {
+    max-width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
+}
+
+#descarga {
+    display: flex;
+    width: 1400px;
+    height: 700px;
+    position: relative; /* Asegura que los elementos dentro se posicionen correctamente */
+    justify-content: center;
+    align-items: center;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: fill; /* Ajusta el tamaño del video para que cubra todo el div */
+    z-index: -1; /* Coloca el video detrás de los otros elementos */
 }
 
-/* Estilos para el botón de descarga */
+#texto-boton-descarga{
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#descarga h3 {
+    position: relative; /* Asegura que el texto se muestre correctamente */
+    z-index: 1; /* Asegura que el texto esté delante del video */
+    /* El resto de tus estilos para el título */
+}
 
 .boton-descarga {
+    width: 180px;
+    height: 60px;
     display: inline-block;
-    background-color: #007bff; /* Color de fondo del botón */
+    background-color: rgba(0, 86, 179, 0.9); /* Cambia el color de fondo con transparencia */
     color: #fff; /* Color del texto del botón */
-    padding: 10px 20px;
+    padding-top: 35px;
     text-decoration: none;
     border-radius: 5px;
+    text-align: center;
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 570px;
 }
 
 .boton-descarga:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+    background-color: rgba(0, 86, 179, 0.5); /* Cambia el color de fondo con transparencia */
 }
 
-/* Estilos para las redes sociales */
+#redes-contacto{
+    text-align: center; /* Centra los elementos horizontalmente */
+}
 
 .redes-sociales {
-    list-style-type: none;
-    paddin
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+#redes-sociales h2 {
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+#redes-sociales li {
+    display: inline-block; /* Muestra los elementos en línea */
+    margin-right: 10px; /* Ajusta el espacio entre los iconos */
+}
+
+#redes-sociales li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+#redes-sociales img {
+    width: 64px; /* Establece el ancho del icono */
+    height: 64px; /* Establece la altura del icono */
+}
+
+footer{
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 20px;
+    text-align: center;
+}
