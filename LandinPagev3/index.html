@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la App</title>
+    <!-- Enlace a tu hoja de estilos CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Enlace a Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <!-- EN USO ACTUAL PARA EL TITULO-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+    <!-- JAVASCRIPT-->
+    <script src="./js/index.js"></script>
+</head>
+<body>
+
+<header>
+    <!-- Logo de la App -->
+    <img src="./img/RR logo.png" alt="Logo de la App">
+    <!-- Título de la App -->
+    <h1 id="appTitle">RiftRoyalty</h1>
+</header>
+<!-- Barra de navegación -->
+<nav>
+    <a href="#caracteristicas">Características</a>
+    <a href="#descarga">Descarga</a>
+    <a href="#redes-contacto">Ayuda</a>
+</nav>
+<main>
+<!-- Primer div con carrusel de imágenes -->
+<div class="seccion" id="caracteristicas">
+        <div class="contenido" id="caracteristicasContenido">
+            <div class="caracteristica-info">
+                <div class="caracteristica-contenido">
+                    <button class="boton-caracteristica" onclick="mostrarCaracteristica(0)">Mostrar Característica 1</button>
+                </div>
+                <div class="caracteristica-contenido">
+                    <p id="textoCaracteristica1">Texto de la Característica 1</p>
+                </div>
+            </div>
+            <div class="caracteristica-info">
+                <div class="caracteristica-contenido">
+                    <button class="boton-caracteristica" onclick="mostrarCaracteristica(1)">Mostrar Característica 2</button>
+                </div>
+                <div class="caracteristica-contenido">
+                    <p id="textoCaracteristica2">Texto de la Característica 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="imagen-caracteristica">
+            <img id="imagenCaracteristica" src="./img/fondo-download.jpg" alt="Imagen de característica">
+        </div>
+</div>
+
+
+    
+    
+
+    <!-- Segundo div con frase motivadora y botón de descarga -->
+    <div class="seccion" id="descarga">
+            <video autoplay loop muted class="video-background" id="video-descarga">
+                <source src="./vid/¡Caps dando clases con Sylas!   Mejores Jugadas   Esports   League of Legends.mp4" type="video/mp4">
+                <!-- Agrega más etiquetas source para otros formatos de video -->
+            </video>
+            <div class="seccion" id="texto-boton-descarga">
+                <!-- <h3>Aumenta tu nivel de juego, reina en la grieta del invocador</h3> -->
+                <a href="enlace_de_descarga" class="boton-descarga">Descargar</a>
+            </div>
+    </div>
+
+    <!-- Tercer div con apartado de redes sociales y contacto -->
+    <div class="seccion" id="redes-contacto">
+        <div id="redes-sociales">
+            <h2>Síguenos en redes sociales</h2>
+            <!-- Aquí van los iconos/link a tus redes sociales -->
+            <ul class="redes-sociales">
+                <li><a href="enlace_github"><img src="./img/github.png" alt="github"></a></li>
+                <li><a href="enlace_twitter"><img src="./img/twitter.png" alt="Twitter"></a></li>
+                <li><a href="enlace_instagram"><img src="./img/ig-redondo-removebg-preview.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div id="contacto">
+            <h2>Contáctanos</h2>
+            <p><strong>Correo electrónico: </strong> support@riftroyalty.com</p>
+            <p><strong>Teléfono:</strong> 123-456-7890</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <!-- Pie de página con información adicional, enlaces legales, etc. -->
+    <p>Derechos de autor © 2024 RiftRoyalty. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

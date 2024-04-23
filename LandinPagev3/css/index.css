@@ -1,0 +1,241 @@
+/* Estilos generales */
+
+body {
+    background-image: url("../img/fondo\ web.avif") ;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body p{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+header {
+    background-color: #333; /* Color de fondo del header */
+    color: #fff; /* Color del texto en el header */
+    padding: 10px;
+    text-align: center;
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center;
+}
+
+header img {
+    width: 144px; /* Establece el ancho del logo */
+    height: 144px; /* Establece la altura del logo */
+    margin-right: 10px; /* Añade un margen a la derecha para separar el logo del texto */
+}
+header h1{
+    font-size: 72px;
+    margin: 0px;
+    font-family: 'Merriweather', sans-serif;
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat al texto del navbar */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px; /* Ajusta el tamaño del texto del enlace */
+}
+
+nav a:hover {
+    color: #A7C5E1;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+.seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Alinea los elementos horizontalmente */
+    width: 100%; /* Ocupa el 100% del ancho */
+    margin-bottom: 15px;
+}
+
+.contenido p {
+    width: 50%; /* Ocupa el 50% del ancho */
+    max-width: 50%; /* Ajusta el ancho máximo del párrafo según sea necesario */
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    text-align: justify;
+    background-color: rgb(145, 145, 145, 0.5);
+    border-radius: 10px; /* Redondea los bordes del fondo */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenido img {
+    width: 50%; /* Ocupa el 50% del ancho */
+    max-width: 50%; /* Ajusta el ancho máximo de la imagen según sea necesario */
+}
+#caracteristicas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#caracteristicasContenido {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.caracteristica-info {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.caracteristica-contenido {
+    margin-right: 20px; /* Margen a la derecha para separar los elementos */
+}
+
+.boton-caracteristica {
+    margin-bottom: 10px; /* Margen inferior para separar el botón del título */
+    align-self: center; /* Centra verticalmente el botón */
+}
+
+.caracteristica-contenido h3,
+.caracteristica-contenido p {
+    width: 100%; /* Ocupa el 100% del ancho */
+    max-width: 100%; /* Ajusta el ancho máximo del título y la descripción */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.imagen-caracteristica {
+    flex-shrink: 0; /* Evita que el div de la imagen se encoja */
+}
+
+.imagen-caracteristica img{
+    visibility: hidden;
+    margin-left: 25px;
+}
+/* .caracteristica-contenido p {
+    display: none;
+} */
+#textoCaracteristica1, #textoCaracteristica2{
+    visibility: hidden;
+}
+.boton-caracteristica {
+    background-color: rgba(0, 86, 179, 0.9); /* Cambia el color de fondo con transparencia */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Ajusta el relleno del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Agrega bordes redondeados al botón */
+    margin-bottom: 10px; /* Agrega margen inferior al botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+.boton-caracteristica:hover {
+    background-color: rgba(0, 86, 179, 0.5); /* Cambia el color de fondo con transparencia al pasar el mouse */
+}
+
+#descarga {
+    display: flex;
+    width: 1400px;
+    height: 700px;
+    position: relative; /* Asegura que los elementos dentro se posicionen correctamente */
+    justify-content: center;
+    align-items: center;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Ajusta el tamaño del video para que cubra todo el div */
+    z-index: -1; /* Coloca el video detrás de los otros elementos */
+}
+
+#texto-boton-descarga{
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#descarga h3 {
+    position: relative; /* Asegura que el texto se muestre correctamente */
+    z-index: 1; /* Asegura que el texto esté delante del video */
+    /* El resto de tus estilos para el título */
+}
+
+.boton-descarga {
+    width: 180px;
+    height: 60px;
+    display: inline-block;
+    background-color: rgba(0, 86, 179, 0.9); /* Cambia el color de fondo con transparencia */
+    color: #fff; /* Color del texto del botón */
+    padding-top: 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 570px;
+}
+
+.boton-descarga:hover {
+    background-color: rgba(0, 86, 179, 0.5); /* Cambia el color de fondo con transparencia */
+}
+
+#redes-contacto{
+    text-align: center; /* Centra los elementos horizontalmente */
+}
+
+.redes-sociales {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+#redes-sociales h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#redes-sociales li {
+    display: inline-block; /* Muestra los elementos en línea */
+    margin-right: 10px; /* Ajusta el espacio entre los iconos */
+}
+
+#redes-sociales li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+#redes-sociales img {
+    width: 64px; /* Establece el ancho del icono */
+    height: 64px; /* Establece la altura del icono */
+}
+
+footer{
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 20px;
+    text-align: center;
+}
